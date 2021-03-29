@@ -1,0 +1,30 @@
+
+	****************************************
+
+		PERPARA PERDORIMIT
+
+	****************************************
+
+1. Hap START dhe kerko: "ENVIRONMENT VARIABLES".
+2. Ne fund kliko "Environment Variables"
+3. Ne tabelen e pare kerko dhe kliko 2 here ne 'Path'
+4. Kliko ne "New".
+5. Nese nuk keni ndryshuar vendodhjen e direktorise gjat instalimit, kopjoni 
+	tekstin e meposhtem dhe bashkengjiteni te 'Path':
+
+	***	C:\Program Files\Similarity Check\dist\checkfiles	***
+
+	...nese keni ndryshuar direktorine,
+		kopjoni direktorine ku ndodhet direktoria dhe shtoni "Similarity Check\dist\checkfiles".
+	
+	P.SH -> C:\***"Direktoria juaj"***\Similarity Check\dist\checkfiles
+
+6. Lexoni README.txt per informacione te perdorimit te programit.
+
+
+
+	****************************************
+
+		FALEMINDERIT
+
+	****************************************
