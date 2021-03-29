@@ -1,0 +1,6 @@
+colorama==0.4.4
+numpy==1.20.1
+pandas==1.2.3
+pdfminer.six==20201018
+pyinstaller==4.2
+scikit-learn==0.24.1
