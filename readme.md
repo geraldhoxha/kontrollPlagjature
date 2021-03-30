@@ -1,6 +1,6 @@
 # Kontroll plagjature
 
-Ndiq instruksionet e thjeshta te instalimit per perdorimin e proramit
+Ndiq instruksionet e thjeshta te instalimit per perdorimin e programit
 
 ## Instalimi i librarive
 
