@@ -31,10 +31,10 @@ python app.py --save -file="emrin e skedarit qe do te kontrollosh"
 Per te krijuar nje program qe mund ta aksesosh kudo ne kompjuter, ndiq hapat e meposhtme:
 
 ### 1.
-
-'''bash
+Hap cmd ne direktorine perkatese dhe fut komanden e meposhtme
+```bash
 pyinstaller app.py --name=checkfiles --icon=logo.ico
-'''
+```
 ! Kjo do te zgjase 2-3 minuta.
 
 ### 2 
@@ -55,7 +55,7 @@ Kliko ne fund te 'Enviroment Variables'
 
 Ne dritaren e re qe do te hapet, te paneli i pare kliko dy here ne 'Path'
 
-### 6
+#### 6
 
 Kliko 'New', dhe me pas fut linkun qe ke kopjuar.
 
