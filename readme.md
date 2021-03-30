@@ -9,7 +9,7 @@ Mund te instalohen nje nga nje me komanden:
 ```bash
 pip install "emri i librarise"
 ```
-    ...ose mund te instalohen njeheresh me komanden:
+...ose mund te instalohen njeheresh me komanden:
 
 ```bash
 pip install -r requirements.txt
