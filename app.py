@@ -12,7 +12,7 @@ import os
 def konfigurimet():
 
     # Afishon nje nga nje menune e konfigurimeve
-    print(f"\n{Style.BRIGHT}{Fore.GREEN}Perfshire skedaret '.text'? " +
+    print(f"\n{Style.BRIGHT}{Fore.GREEN}Perfshire skedaret 'Text'? " +
     f"{Fore.YELLOW}Shkruani 'Po' ose 'Jo': {Style.RESET_ALL}", end=" ")
     text = input()
     print(f"\n{Style.BRIGHT}{Fore.GREEN}Perfshire skedaret 'Word'? "+
@@ -80,7 +80,7 @@ def check_one_file():
         '''
         Sintaksa per perzgjedhjen e nje skedari eshte:
 
-                -file=< EMRIN E SKEDARIT >
+                -file=< EMRI I SKEDARIT >
         '''
         # Kthen emrin e skedarit te perzgjedhur
         return skedari
