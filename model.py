@@ -64,7 +64,7 @@ class Plagjature:
             fullText = '\n'.join(fullText)
             provimet_docx.append(fullText)
 
-        # Perditeson variablin qe do te krahasohen
+        # Perditeson variablin qe ruan te dhenat qe do te krahasohen
         self.provimet += [sked for sked in provimet_docx]
 
     # Lexon te gjitha skedaret PDF    
@@ -82,7 +82,7 @@ class Plagjature:
             file = extract_text(pdf)
             provimet_pdf.append(file)
 
-        # Perditeson variablin qe do te krahasohen
+        # Perditeson variablin qe ruan te dhenat qe do te krahasohen
         self.provimet += [sked for sked in provimet_pdf]
 
     # Konfigurimi per krahasim te skedareve
@@ -108,7 +108,7 @@ class Plagjature:
 
             # Krion nje list vektoresh ku secili vektor permban:
             #   1: Emrin e skedarit
-            #   2: Te skedaret e vektorizuar per krahasim
+            #   2: Te gjithe skedaret e vektorizuar per krahasim
             self.list_vektoresh = list(zip(self.studentet, self.vektoret))
 
             # Ruan rezuktatet ne nje variabel "rezultatet"
