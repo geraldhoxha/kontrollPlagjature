@@ -23,7 +23,6 @@ import pandas as pd
 
 # Mundeson funksione qe nderveprojne me sistemin operativ
 import os
-import sys
 
 
 # Modeli i objektit 
