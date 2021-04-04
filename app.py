@@ -109,6 +109,7 @@ def runApp(save, singlefile=False):
     # Shfaq te dhenat ne CLI
     app.shfaq_te_dhenat()
 
+# Funksioni per ndihme te perdorimit
 def _help():
  
     try:
@@ -134,9 +135,11 @@ if __name__=="__main__":
     # Ruan ne nje variabel pergjigjen e funksionit 'check_one_file'
     singlefile = check_one_file()
 
+    # Ndalo programin nese ka problem
     if singlefile == 'Error':
         sys.exit()
     
+    # Shfaq ndihmen
     if _help:
         print('\nShkruani "checkfiles" dhe prisni disa sekonda (ne varesi te numrit te skedareve).', end="\n\n")
         print('Programi do te filloje dhe ju do shkruani "po" ose "jo" konfigurimeve.')
