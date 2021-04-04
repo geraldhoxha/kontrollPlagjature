@@ -15,7 +15,7 @@ from pdfminer.high_level import extract_text
 # Mundeson ngjyrat e ndryshme ne CMD
 from colorama import Fore, Back, Style
 
-# Extract_text mundeson perpunimin e skedareve DOCX
+# Document mundeson perpunimin e skedareve DOCX
 from docx import Document
 
 #Mundeson perpunimin e kornizave te te dhenave
@@ -25,7 +25,6 @@ import pandas as pd
 import os
 
 
-# Modeli i objektit 
 class Plagjature:
 
     # Liste boshe qe do te ruhen te dhenat e perpunuara dhe

@@ -1,4 +1,4 @@
-# Importojme modelin e krijuar Plagjature
+# Modeli i krijuar 'Plagjature'
 from model import Plagjature
 
 # Librarite e nevojshme
@@ -109,6 +109,13 @@ def runApp(save, singlefile=False):
     # Shfaq te dhenat ne CLI
     app.shfaq_te_dhenat()
 
+def _help():
+ 
+    try:
+        return True if "help" or "-help" in sys.argv else False
+    except:
+        return False
+
 
 
 if __name__=="__main__":
@@ -118,11 +125,11 @@ if __name__=="__main__":
     '''
     Sintaksa per ruajtjen e skedarit ne CSV eshte:
 
-            --save
+            -save
     '''
 
     # Kthen True nese perdoruesi kerkon te ruhet ne CSV, perndryshe kthen False
-    csv = True if '--save' in sys.argv else False
+    csv = True if '-save' in sys.argv else False
 
     # Ruan ne nje variabel pergjigjen e funksionit 'check_one_file'
     singlefile = check_one_file()
@@ -130,5 +137,27 @@ if __name__=="__main__":
     if singlefile == 'Error':
         sys.exit()
     
+    if _help:
+        print('\nShkruani "checkfiles" dhe prisni disa sekonda (ne varesi te numrit te skedareve).', end="\n\n")
+        print('Programi do te filloje dhe ju do shkruani "po" ose "jo" konfigurimeve.')
+        print("\t    Konfigurimet jane:")
+        print("\t\t        -Deshironi skedaret .txt (nese e lini bosh, programi NUK do te skanoje skedaret .txt)")
+        print('\t\t        -Deshironi skedaret .docx (nese e lini bosh, programi DO TE skanoje skedaret .docx "Word")')
+        print('\t\t        -Deshironi skedaret .pdf (nese e lini bosh, pogrami DO TE skanoje skedaret .pdf "PDF"', end="\n\n")
+
+        print("Rezultatet do te jene nje krahasim ndermjet skedareve, si the do kene nje ngjyre korensponduese qe nenkuptojne:")
+        print('\t\t        -Jeshile:	Ngjashmeri e dobet')
+        print('\t\t        -E verdhe:	Ngjashmeri mesatare')
+        print('\t\t        -E kuqe:	Ngjasmeri e larte')
+        print("\n\n\n")
+
+        print(f'{"-" * 100}')
+        print("Funksione te programit:")
+        print("|\t-save:\t\t Ruan rezultatet ne nje format .csv. Sintaksa: [ checkfiles --save ]")
+        print("|\t-file:\t\t Specifikon skedarin per krahasimin. Sintaksa: [ checkfile -file='EMRI I SKEDARIT']")
+        print("\nShembull:")
+        print("\t\t[ checkfiles -save -file=Cloud_Programming.pdf ]")
+        sys.exit()
+
     # Ekzekuton programin
     runApp(csv, singlefile)
