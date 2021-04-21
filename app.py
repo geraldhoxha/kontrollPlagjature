@@ -110,10 +110,10 @@ def runApp(save, singlefile=False):
     app.shfaq_te_dhenat()
 
 # Funksioni per ndihme te perdorimit
-def _help():
+def ndihme():
  
     try:
-        return True if "help" or "-help" in sys.argv else False
+        return True if "help" in sys.argv or "-help" in sys.argv else False
     except:
         return False
 
@@ -138,9 +138,9 @@ if __name__=="__main__":
     # Ndalo programin nese ka problem
     if singlefile == 'Error':
         sys.exit()
-    
+
     # Shfaq ndihmen
-    if _help:
+    if ndihme():
         print('\nShkruani "checkfiles" dhe prisni disa sekonda (ne varesi te numrit te skedareve).', end="\n\n")
         print('Programi do te filloje dhe ju do shkruani "po" ose "jo" konfigurimeve.')
         print("\t    Konfigurimet jane:")
@@ -163,4 +163,8 @@ if __name__=="__main__":
         sys.exit()
 
     # Ekzekuton programin
-    runApp(csv, singlefile)
+    try:
+        runApp(csv, singlefile)
+    except:
+        # print("Doli")
+        sys.exit()
