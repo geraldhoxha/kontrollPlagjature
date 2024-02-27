@@ -68,3 +68,7 @@ Programi tani eshte global ne kompjuter. Mund te hapesh cmd ne cdo direktori dhe
 ```bash
 python app.py --save -file="skedari juaj"
 ```
+
+#### Note
+ - Ka probleme
+ - Duhet perditsuar
